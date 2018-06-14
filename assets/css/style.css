@@ -1,49 +1,81 @@
 /*css for clock animation*/
-html, body {
+/* html, body {
   height: 100%;
 }
 
 body {
-  background: url("../images/trackcolor.jpg");
-  /* background: radial-gradient(ellipse at top, #0a2e38 0%, #000000 70%); */
+  background: url("../images/evening.jpg");
+  
   background-size: 100%;
 }
 
 p {
   margin: 0;
   padding: 0;
+} */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+*{
+  margin: 0;
+  padding: 0;
 }
-
-#clock {
-  font-family: 'Share Tech Mono', monospace;
-  color: #ffffff;
+body{
+  background: radial-gradient(rgb(182, 18, 18), #668);
+  height: 100vh;
+  width: 100vw;
+}
+#date{
+  background: linear-gradient(rgb(160, 17, 17), #777);
+  color: #fff;
+  font-family: "Open Sans", sas-serif;
+  font-size: 2em;
+  padding: 0.5em;
   text-align: center;
+}
+#clock{
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  height: 130px;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  left: calc(50% - 300px);
   position: absolute;
-  left: 50%;
-  top: 22%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #daf6ff;
-  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+  top: calc(30% - 65px);
+  width: 600px;
 }
-#clock .time {
-  letter-spacing: 0.05em;
-  font-size: 80px;
-  padding: 5px 0;
-}
-#clock .date {
-  letter-spacing: 0.1em;
-  font-size: 24px;
-}
-#clock .text {
-  letter-spacing: 0.1em;
-  font-size: 24px;
-  padding: 20px 0 0;
-}
-/*end of css for clock animation*/
+.unit{
+  background: linear-gradient(rgb(61, 6, 6), #777);
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgb(14, 9, 9);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 5em;
+  height: 100%;
+  line-height: 130px;
+  margin: 0 10px;
+  text-align: center;
+  text-shadow: 0 2px 2px #666;
+  width: 23%;
+  }
 
 th, tr, p, label, h3 {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 10px;
+  
+}
+.panel {
+  margin-bottom: 100px;
 }
 
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(83, 17, 17);
+  color: white;
+  text-align: center;
+ 
+ 
+}
