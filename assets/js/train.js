@@ -25,12 +25,12 @@ function zeroPadding(num, digit) {
 }
  // Initialize Firebase
  var config = {
-    apiKey: "AIzaSyCnjh9ZzdckLzYF8nR11CgsDQXPxO7rCbw",
-    authDomain: "homework7-b3ff9.firebaseapp.com",
-    databaseURL: "https://homework7-b3ff9.firebaseio.com",
-    projectId: "homework7-b3ff9",
-    storageBucket: "homework7-b3ff9.appspot.com",
-    messagingSenderId: "800954126834"
+    apiKey: "AIzaSyDvIW0dlVW1EYkFU8eQlUHl4nyOubzcpCM",
+    authDomain: "train-f8519.firebaseapp.com",
+    databaseURL: "https://train-f8519.firebaseio.com",
+    projectId: "train-f8519",
+    storageBucket: "",
+    messagingSenderId: "817567863041"
   };
   firebase.initializeApp(config);
 
