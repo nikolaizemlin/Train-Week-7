@@ -3,6 +3,7 @@
 <head>
 	<title>Train Schedule</title>
 <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 <!-- css for the clock animation -->
@@ -13,7 +14,7 @@
 <!-- FireBase script Link -->
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <!-- Jquery script link -->
-	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Firebase link-->
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
@@ -23,12 +24,13 @@
 </head>
 <body>
 
-<!-- vue.js clock html -->
- <div id="clock">
-    <p class="date">{{ date }}</p>
-    <p class="time">{{ time }}</p>
-    <p class="text">Your Daily Train Check</p>
-</div>
+  <p id="date"></p>
+  <div id="clock">
+    <p class="unit" id="hours"></p>
+    <p class="unit" id="minutes"></p>
+    <p class="unit" id="seconds"></p>
+    <p class="unit" id="ampm"></p>
+  </div>
 
 <div class="container">
 <!-- Train Schedule-->
@@ -87,9 +89,11 @@
           </div>
         </div>
 </div>
-  <!-- vue.js -->
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
 
+<div class="footer">
+  <p>This site created by Nick Hosley click
+    <a href="https://nikolaizemlin.github.io/mainsite/">Here</a> to return home.</p>
+</div>
   <!-- my js -->
   <script type="text/javascript" src="assets/js/train.js"></script>
 </body>
