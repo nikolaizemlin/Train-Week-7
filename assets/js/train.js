@@ -79,6 +79,7 @@ function zeroPadding(num, digit) {
 
 var dataRef = firebase.database();
 
+
 // Initial Values
 var Train = "";
 var Destination = "";
